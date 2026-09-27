@@ -1,0 +1,115 @@
+/* Header */
+
+.header {
+  overflow: hidden;
+  /* Navbar */
+
+  /* Ovverride On Bootstrap */
+  .navbar-light .navbar-nav .active>.nav-link,
+  .navbar-light .navbar-nav .nav-link.active,
+  .navbar-light .navbar-nav .nav-link.show, 
+  .navbar-light .navbar-nav .show>.nav-link {
+    color: #333
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: #557686;
+  }
+  
+  .navbar {
+    box-shadow: 0 0 10px #444;
+    /* Navbar Container */
+    .navbar-nav {
+      @media (max-width: 991px) {
+        direction: ltr;
+      }
+    /* Link Container */
+      .nav-item {
+        display: flex;
+        align-items: center;
+        @media (min-width: 992px) {
+          margin-right: $marginPixels + 30;
+        }
+        > .nav-link {
+          font-size: 15px;
+          &:hover {
+            color: #333
+          }
+          i {
+            @media (max-width: 991px) {
+              margin-right: $marginPixels;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* End Navbar */
+  /* Header */
+  .header {
+    width: $mainWidth;
+    height: $mainHeight;
+    background: url("../images/header-background/header-background.jpg") no-repeat 0 -100px;
+    background-size: cover;
+    @media (min-width: 536px) and (max-width: 767px) {
+      background-position: -160px -85px
+    }
+    @media (min-width: 356px) and (max-width: 535px) {
+      background-position: -385px -85px
+    }
+    @media (max-width: 585px) {
+      background-position: -290px -85px
+
+    }
+    @media (max-width: 445px) {
+      background-position: -400px -85px
+    }
+    @media (max-width: 340px) {
+      background-position: -450px -85px
+    }
+    .title {
+      @media (min-width: 768px) {
+        justify-content: flex-end
+      }
+      @media (max-width: 767px) {
+        justify-content: center;
+        background-color: rgba(242, 242, 242, .5);
+        padding: 17px;
+        box-shadow: 0 0 10px #aaaaaaad;
+      }
+      h1 {
+        line-height: 1.6;
+        margin-bottom: $marginPixels + 5;
+        color: #313131;
+        @media (max-width: 625px) {
+          font-size: 2rem
+        }
+        @media (max-width: 460px) {
+          font-size: 1.5rem
+        }
+        @media (max-width: 364px) {
+          font-size: 1.2rem
+        }
+        @media (max-width: 364px) {
+          font-size: 1.1rem
+        }
+      }
+      h3 {
+        @media (max-width: 625px) {
+          color: #253c50 !important
+        }
+        @media (min-width: 461px) and (max-width: 625px) {
+          font-size: 1.25rem;
+        }
+        @media (max-width: 460px) {
+          font-size: 1rem
+        }
+        @media (max-width: 364px) {
+          font-size: .8rem
+        }
+      }
+    }
+  }
+  /* End Header */
+}
+
+/* End Header */

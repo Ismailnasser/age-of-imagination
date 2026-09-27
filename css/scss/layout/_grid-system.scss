@@ -1,0 +1,69 @@
+body {
+  font-family: "Droid-Arabic-Coffie";
+}
+
+:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: $blackColor
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0
+}
+
+button {
+  background: transparent;
+  border: 1px solid rgba($blackColor, .5);
+  font-size: $fontSize + 2;
+  padding: $paddingPixels - 2 $paddingPixels + 10;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+/* Icons Coordinate */
+a {
+  &:hover {
+    text-decoration: none
+  }
+  i {
+    width: $secondWidth - 75;
+    height: $secondWidth - 75;;
+    background-color: #555;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    color: $whiteColor;
+    transition: all .2s ease-in-out;
+    &:hover {
+      transform: scale(1.05)
+    }
+  }
+}
+.fa-facebook {
+  background-color: #3b5998;
+  &:hover {
+    border-color: #3b5998;
+    color: #3b5998;
+    background-color: $whiteColor
+  }
+}
+.fa-twitter {
+  background-color: #1da1f2;
+  &:hover {
+    border-color: #1da1f2;
+    color: #1da1f2;
+    background-color: $whiteColor
+  }
+}
+.fa-youtube {
+  background-color: #ff0000;
+  &:hover {
+    border-color: #ff0000;
+    color: #ff0000;
+    background-color: $whiteColor
+  }
+}
